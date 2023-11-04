@@ -27,16 +27,24 @@ def input():
     if request.method == 'GET':
         return render_template('/input.html')
     if request.method == 'POST': #if the user decides to upload a file
+
+        file = request.files['file']
+
+        if file and allowed_file(file.filename)
+
         # check if the post request has the file part, or redirect to an error
         if 'file' not in request.files:
             return render_template('/error.html')
         print('1')
+
+
         #here, the user has inputted some file, set the file variable as the file input
         file = request.files['file']
         # If the user's file is an empty string, redirect to an error
         if file.filename == '':
             return render_template('/error.html')
         print('2')
+
         if file and allowed_file(file.filename): 
         #check if user input is a valid file type
             filename = secure_filename(file.filename) #generate a secure file name
