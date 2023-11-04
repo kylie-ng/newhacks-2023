@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
   <!-- all the meta charset stuff -->
-  <title>NewHacks 2023</title>
+  <title>NCS Dojo</title>
   <!-- link the webpage's stylesheet here-->
   <!-- link the webpage's JS file here -->
-
-    <title>NewHacks 2023</title>
-  </head>
+  <title>NewHacks 2023</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="input.html">Input PDF</a></li>
+                <li><a href="output.html">Output PDF</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Train with CS Dojo</h1>
+            <p>This is the main content section of your website.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; CS Dojo | NewHacks 2023</p>
+    </footer>
+</body>
 </html>
