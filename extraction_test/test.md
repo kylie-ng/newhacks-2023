@@ -1,67 +1,96 @@
 # Problem Set
 
-1. Which naming convention is recommended for identifying constants in Python?
-   a) camelCase
-   b) Joined_lower
-   c) ALL_CAPS
-   d) StudlyCase
+## Multiple Choice
 
-2. Which operator is used for string concatenation in Python?
-   a) +
-   b) -
-   c) *
-   d) /
+1. Which of the following is NOT a basic object type in Python?
 
-3. Explain the difference between a tuple and a list in Python.
+   A) Boolean  
+   B) Float  
+   C) Character  
+   D) String  
 
-4. What is the purpose of the "datetime" module in Python? Give an example of how to use it.
+2. What is the purpose of the `open()` function in Python?
 
-5. Write a Python code snippet to calculate the factorial of a given number.
+   A) To open a new Python shell  
+   B) To open a new Python file for reading or writing  
+   C) To open a new Python module for importing  
+   D) To open a new Python class for instantiation  
+
+## Long Answer
+
+1. Explain the difference between a tuple and a list in Python. Give an example of when you would use each.
+
+2. Describe the purpose of the `if-else` statement in Python. Provide an example of its usage.
+
+3. What is the difference between the assignment operator `=` and the comparison operator `==` in Python? Give an example of each.
 
 # Solution Set
 
-1. Answer: c) ALL_CAPS
+## Multiple Choice
 
-2. Answer: a) +
+1. Which of the following is NOT a basic object type in Python?
 
-3. A tuple is an immutable sequence of elements, while a list is a mutable sequence of elements. This means that once a tuple is created, its elements cannot be changed, added, or removed. However, in a list, elements can be modified, added, or removed.
+   A) Boolean  
+   B) Float  
+   C) Character  
+   D) String  
 
-4. The "datetime" module in Python provides classes and functions for working with dates and times. It enables us to create, manipulate, and format dates and times. Here's an example of how to use it:
+   **Answer: C) Character**
 
-```python
-import datetime
+2. What is the purpose of the `open()` function in Python?
 
-# Get the current date and time
-current_datetime = datetime.datetime.now()
+   A) To open a new Python shell  
+   B) To open a new Python file for reading or writing  
+   C) To open a new Python module for importing  
+   D) To open a new Python class for instantiation  
 
-# Print the current date and time
-print(current_datetime)
+   **Answer: B) To open a new Python file for reading or writing**
 
-# Get the current year
-current_year = current_datetime.year
+## Long Answer
 
-# Print the current year
-print(current_year)
-```
+1. Explain the difference between a tuple and a list in Python. Give an example of when you would use each.
 
-Output:
-```
-2021-11-26 15:30:00
-2021
-```
+   **Answer:** A tuple is an immutable sequence of objects, while a list is a mutable sequence of objects. This means that once a tuple is created, its elements cannot be changed, while a list allows for adding, removing, or modifying elements. Tuples are typically used for storing related pieces of information together, while lists are more versatile and can be used for a variety of purposes.
 
-5. ```python
-def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n-1)
+   Example:
+   ```
+   # Tuple
+   person = ('John', 25, 'Male')
 
-# Test the factorial function
-print(factorial(5))
-```
+   # List
+   numbers = [1, 2, 3, 4, 5]
+   ```
 
-Output:
-```
-120
-```
+2. Describe the purpose of the `if-else` statement in Python. Provide an example of its usage.
+
+   **Answer:** The `if-else` statement is used for conditional execution in Python. It allows the program to make decisions based on certain conditions. If the condition specified in the `if` statement is met, the code block within the `if` statement is executed. If the condition is not met, the code block within the `else` statement is executed.
+
+   Example:
+   ```
+   age = 18
+
+   if age >= 18:
+       print("You are an adult.")
+   else:
+       print("You are a minor.")
+   ```
+
+3. What is the difference between the assignment operator `=` and the comparison operator `==` in Python? Give an example of each.
+
+   **Answer:** The assignment operator `=` is used to assign a value to a variable in Python. It is used to store a value in a variable or update the value of an existing variable.
+
+   Example:
+   ```
+   x = 5
+   y = "Hello World"
+   ```
+
+   On the other hand, the comparison operator `==` is used to compare two values for equality. It returns `True` if the values are equal, and `False` otherwise.
+
+   Example:
+   ```
+   a = 10
+   b = 5
+
+   print(a == b)  # Output: False
+   ```
