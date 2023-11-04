@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- all the meta charset stuff -->
-  <title>NCS Dojo</title>
+  <title>Baby</title>
   <!-- link the webpage's stylesheet here-->
   <!-- link the webpage's JS file here -->
   <title>NewHacks 2023</title>
@@ -19,12 +19,12 @@
     </header>
     <main>
         <section>
-            <h1>Train with CS Dojo</h1>
-            <p>This is the main content section of your website.</p>
+            <h1>Train with Baby</h1>
+            <p>Upload a picture of your notes and generate a customizable problem set!</p>
         </section>
     </main>
     <footer>
-        <p>&copy; CS Dojo | NewHacks 2023</p>
+        <p>&copy; 2023 Baby | 2023 NewHacks </p>
     </footer>
 </body>
 </html>
