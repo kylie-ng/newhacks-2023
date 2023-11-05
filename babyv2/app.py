@@ -2,12 +2,13 @@ from flask import Flask, request, render_template, send_file
 from werkzeug.utils import secure_filename
 from PyPDF2 import PdfReader 
 import openai
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 import os
 import sys
 import subprocess
 ALLOWED_EXTENSIONS = {'pdf'}
-
+load_dotenv()
+OPEN_AI_API_KEY = os.getenv("OPEN_AI_API_KEY")
 app = Flask(__name__) #create a Flask instance
 UPLOAD_FOLDER = '/uploads'
 app.config[UPLOAD_FOLDER] = '/uploads' #linked to the variable above to store uploaded PDFs
@@ -55,10 +56,13 @@ def create_pset(input_pdf, num_mcq, num_long, model):
         subprocess.run(["pandoc", "--from=gfm", "--to=pdf", "-o", pdf_out, md_out], check=True)
         print("PDF conversion complete!")
         print("Success!")
+        print(pdf_out)
         return pdf_out
     except subprocess.CalledProcessError:
         print("Markdown to PDF conversion failed")
+        # return md_out
     
+    '''
     input_pdf = sys.argv[1]
 
     try:
@@ -77,6 +81,7 @@ def create_pset(input_pdf, num_mcq, num_long, model):
         model = "gpt-3.5-turbo"
 
     create_pset(input_pdf, num_mcq, num_long, model)
+    '''
 
 def allowed_file(filename):
     return '.' in filename and \
@@ -103,11 +108,11 @@ def input():
             filename = secure_filename(file.filename) #generate a secure file name
             file_path = 'static/uploads/' + filename
             file.save('static/uploads/' + filename)
-            pdf_reader(file_path)
-            return send_file(file_path)
-        return render_template('index.html')
+            # pdf_reader(file_path)
 
-#load_dotenv()
-OPEN_AI_API_KEY = os.getenv("OPEN_AI_API_KEY")
+            outfile = create_pset(file_path, 2, 3, "gpt-3.5-turbo")
+
+            return send_file(outfile)
+        return render_template('index.html')
 
 
