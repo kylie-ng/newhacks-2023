@@ -20,7 +20,7 @@ The problem set must contain {num_mcq} multiple choice questions and {num_long} 
 
 The plain text output is then processed and formatted into a nice PDF file through Pandoc!
 
-## Why is this useful? (+ inspiration behind )
+## Why is this useful? (+ inspiration behind Baby)
 
 As stated above, Baby AI and the team behind it are looking to push accessible education by providing educational resources while only requiring an internet connection! (this is not fully true yet, requests are currently being made through a team members OpenAI account)
 
@@ -32,5 +32,10 @@ Though very much still in its proof-of-concept phases, we hope to one day deploy
 
 Baby AI still has a long way to go.
 
-For starters, we are currently powered through GPT-3.5-Turbo, a model that has been outperformed by certain competitors. Furthermore, the model lacks fine-tuning leading to unreliable results that do not exactly follow the prompt. Experimentation with GPT-4 has shown promising results, with the quality of problems and formatting being significantly higher, however the cost makes a full GPT-4-powered deployment currently unfeasible. Llama 2 is another route we have been considering, however the large difference in method of API calls (and just general lack of experience) made the team decide to stick to GPT for NewHacks purposes. 
+For starters, we are currently powered through GPT-3.5-Turbo, a model that has been outperformed by certain competitors. The model lacks fine-tuning leading to unreliable results that do not exactly follow the prompt. Experimentation with GPT-4 has shown promising results, with the quality of problems and formatting being significantly higher, however the cost makes a full GPT-4-powered deployment currently unfeasible. Llama 2 is another route we have been considering, however the large difference in method of API calls (and just general lack of experience) made the team decide to stick to GPT for NewHacks purposes. 
 
+We are currently restricted to digitally written PDF files. This is a large limitation since many student notes are hand written, thus a more comprhensive data extraction method should be explored going forwards. Computer vision related topics were discussed in the group, but deemed unfit for the NewHacks timeline.
+
+The API calls are also quite inefficient. Our text extraction lacks nuance and simply extracts every character on a given PDF into a Python string which is used to prompt GPT. This leads to token restrictions and we must ensure the class notes being used are small enough to stay under the 4096 token limit (~3000 words). In testing, we noticed that much of the text in the notes is not useful in providing context to the underlying subject, therefore more rigorous text encoding methods should be explored. 
+
+With the new LearnFreely website currently in progress, the LF team is looking to integrate new features into our daily operations. As mentioned, we hope to eventually implement Baby AI into LearnFreely, and this could be done through the new site.
