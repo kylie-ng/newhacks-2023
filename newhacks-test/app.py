@@ -27,11 +27,6 @@ def input():
     if request.method == 'GET':
         return render_template('/input.html')
     if request.method == 'POST': #if the user decides to upload a file
-
-        file = request.files['file']
-
-        if file and allowed_file(file.filename)
-
         # check if the post request has the file part, or redirect to an error
         if 'file' not in request.files:
             return render_template('/error.html')
