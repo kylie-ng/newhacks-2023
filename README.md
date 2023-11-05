@@ -10,10 +10,18 @@ Just provide a PDF of your class notes and Baby will generate you a problem set 
 
 While we have a frontend UI created, it is not yet deployed to the internet. Unfortunately usage is a little complicated right now but we'll provide the steps anyway:
 
+### Using the .ipynb file (Recommended)
+
+  1. Navigate to and copy `/extraction_test/testing.ipynb` (the name is deceiving)
+  2. Run a notebook instance
+  3. Fill in your own information, specify file paths, enjoy!
+
+### With PyInstaller (a lot more work)
+
   1. Navigate to and copy `/baby-executable/baby-executable.py`, you can do this however you want, the only important part is the extraction and prompt process.
   3. Add your own OpenAI API key (don't be like Jason and hard code it before accidentally pushing to a public repository).
   4. From the directory containing `baby-executable.py`, run `python3 -m PyInstaller baby-executable.py`.
-  5. `./dist/baby-executable /path/to/pdf/file #_of_multiple_choice(default=2) #_of_long_answer(default=3) model(default=gpt-3.5-turbo)`
+  5. run: `./dist/baby-executable /path/to/pdf/file #_of_multiple_choice(default=2) #_of_long_answer(default=3) model(default=gpt-3.5-turbo)`
 
 ## How does it work?
 
