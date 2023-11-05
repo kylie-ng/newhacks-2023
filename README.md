@@ -12,7 +12,7 @@ While we have a frontend UI created, it is not yet deployed to the internet. Unf
 
 ### Using the .ipynb file (Recommended)
 
-  1. Navigate to and copy `/extraction_test/testing.ipynb` (the name is deceiving)
+  1. Navigate to and copy `/extraction_test/testing.ipynb` (the name is deceiving, and I am lazy)
   2. Run a notebook instance
   3. Fill in your own information, specify file paths, enjoy!
 
