@@ -2,9 +2,7 @@
 
 Looking to push the boundaries of accessible education, introducing **Baby AI**
 
-Baby AI is a GPT-powered educational aid that creates customized problem sets for all your courses!
-
-Just provide a PDF of your class notes and Baby will generate you a problem set in no time! 
+Baby AI is a GPT-powered educational aid that creates customized problem sets for all your courses. Just provide a PDF of your class notes and Baby will generate you a problem set in no time! 
 
 ## Usage
 
