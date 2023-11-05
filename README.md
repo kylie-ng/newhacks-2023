@@ -6,6 +6,15 @@ Baby AI is a GPT-powered educational aid that creates customized problem sets fo
 
 Just provide a PDF of your class notes and Baby will generate you a problem set in no time! 
 
+## Usage
+
+While we have a frontend UI created, it is not yet deployed to the internet. Unfortunately usage is a little complicated right now but we'll provide the steps anyway:
+
+  1. Navigate to and copy `/baby-executable/baby-executable.py`, you can do this however you want, the only important part is the extraction and prompt process.
+  3. Add your own OpenAI API key (don't be like Jason and hard code it before accidentally pushing to a public repository).
+  4. From the directory containing `baby-executable.py`, run `python3 -m PyInstaller baby-executable.py`.
+  5. `./dist/baby-executable /path/to/pdf/file #_of_multiple_choice(default=2) #_of_long_answer(default=3) model(default=gpt-3.5-turbo)`
+
 ## How does it work?
 
 Baby AI currently uses GPT-3.5-Turbo to power its problem set generation. Each PDF is parsed and its text is extracted, before being supplied to GPT as a prompt. The system prompt is set up as follows:
