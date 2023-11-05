@@ -8,7 +8,13 @@ Baby AI is a GPT-powered educational aid that creates customized problem sets fo
 
 While we have a frontend UI created, it is not yet deployed to the internet. Unfortunately usage is a little complicated right now but we'll provide the steps anyway:
 
-### Using the .ipynb file (Recommended)
+### Localhost (probably the easiest)
+
+  1. Navigate to and copy `/babyv2/`
+  2. run `flask --app app run`
+  3. Upload your pdf, enjoy!
+
+### Using the .ipynb file (if you want more control)
 
   1. Navigate to and copy `/extraction_test/testing.ipynb` (the name is deceiving, and I am lazy)
   2. Run a notebook instance
