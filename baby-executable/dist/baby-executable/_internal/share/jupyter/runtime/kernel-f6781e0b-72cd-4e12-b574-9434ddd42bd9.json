@@ -1,0 +1,13 @@
+{
+  "shell_port": 58585,
+  "iopub_port": 45159,
+  "stdin_port": 35695,
+  "control_port": 41633,
+  "hb_port": 57571,
+  "ip": "127.0.0.1",
+  "key": "2edec697-fb24bbad85a919c7d8884b40",
+  "transport": "tcp",
+  "signature_scheme": "hmac-sha256",
+  "kernel_name": "python3",
+  "jupyter_session": "/home/jason/NMC268_A3.ipynb"
+}

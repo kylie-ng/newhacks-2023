@@ -1,73 +1,5 @@
-h2 {
-  text-align: center;
-  font-size: x-large;
-  color: black;
-}
-
-/*background*/
-body {
-  background-color: #107e8f;
-}
-
-p {
-  color: white;
-  display: inline;
-  justify-content: center;
-}
-
-/*description of Introducing Baby*/
-.description {
-  color: white;
-  display: flex;
-  justify-content: center;
-}
-
-/*introducing baby heading*/
-.introducingBaby{
-  font-size: xxx-large;
-  text-shadow: 
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px #0fa,
-      0 0 82px #0fa,
-      0 0 92px #0fa,
-      0 0 102px #0fa,
-      0 0 151px #0fa;
-  margin-top: 90px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-/* pill buttons start training */
-.pill{
-  font-size: 20px;
-  padding: 0.5em 1em;
-  margin: 10px;
-  border-radius: 10px;
-  background-color:#FCBC5B;
-  display: flex;
-  align-items: center;
-
-}
-
-.box {
-  display: flex;
-  justify-content: center;
-}
-.box2 {
-  text-align: center;
-}
-
-/* nav bar */
-.centered-div{
-  display: block;
-  justify-content: center;
-  align-items: center;
-}
-
 ul {
+<<<<<<< HEAD
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -109,3 +41,27 @@ footer {
   padding: 10px 0;
   width: 100%;
 }
+=======
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00A2AE;
+  }
+  
+  li {
+    float: center;
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #68D8D6;
+  }
+>>>>>>> e8974b8a3df8b05b36157501e3b9e9954926325b
